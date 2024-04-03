@@ -1,0 +1,203 @@
+/* GenerativeTool.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .generative-tool {
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 80px; /* Adding 50px top margin */
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input-box:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+
+/* Card.css */
+.card {
+  width: calc(33.33% - 40px); /* Adjust the width and margin as needed */
+  margin: 10px;
+  height: 110px;
+  border: none; /* Remove border */
+  box-sizing: border-box; /* Include border and padding in the width */
+  overflow: hidden;
+  border-radius: 10px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+ 
+  
+  .card img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 2px;
+    text-align: center;
+  }
+  
+  .card-content h2 {
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    margin-bottom: 1px;
+  }
+  
+  .card-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: calc(50% - 40px); /* Adjust width for smaller screens */
+      height: 110px; /* Keep the height same */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card {
+      width: calc(100% - 40px); /* Adjust width for even smaller screens */
+      height: 110px; /* Keep the height same */
+    }
+  }
+  
+  .card1 {
+    width: 100%; /* Adjust the width and margin as needed */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    .card1 {
+      width: calc(50% - 40px); /* Adjust width for smaller screens */
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card1 {
+      width: calc(100% - 40px); /* Adjust width for even smaller screens */
+    }
+  }
+  .card2 {
+    width: 80%; /* Adjust the width and margin as needed */
+    margin: 10px;
+    padding: 20px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    background-color: #ffffff; /* White background */
+  }
+
+  .card-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card5 {
+    width: 100%; /* Adjust the width and margin as needed */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    background-color: #ffffff; 
+}
+.card6 {
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 20px;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 80%; /* Adjust as needed */
+    line-height: 1px;
+}
+
+.reactions {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 800vh; /* Ensure content stretches to at least the height of the viewport */
+}
+ /* Yellow background color */
+    .footer {
+      width: 100%;
+      background-color: #faf1b8;
+      padding: 40px 0; /* Increase padding for more space */
+    }
+    
+    /* Style for footer content */
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 100px;
+      gap: 10px; /* Increase gap between columns for more space */
+    }
+    
+    .footer-column {
+      flex: 0 0 20%; /* Reduce column width to accommodate the increased gap */
+      padding: 0 20px; /* Add some padding between columns */
+    }
+    
+    .footer-logo {
+      font-weight: bold;
+    }
+    .footer-bottom p {
+      text-align: center; /* Center align the paragraph */
+    }
+
+    @media only screen and (max-width: 600px) {
+      .footer-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center-align items vertically */
+        margin-left: 0; /* Remove left margin */
+      }
+    
+      .footer-column {
+        flex: 0 0 100%; /* Full width for columns on smaller screens */
+        padding: 10px 0; /* Adjust padding for smaller screens */
+      }
+    }

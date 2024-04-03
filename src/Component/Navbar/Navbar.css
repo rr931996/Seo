@@ -1,0 +1,154 @@
+/* Base styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf1b8;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Adjust spacing between nav items */
+}
+
+.nav-links li.current a {
+  font-weight: bold; /* Style the current page link differently */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-links {
+    margin-top: 10px; /* Add spacing between logo and nav links */
+  }
+
+  .nav-links li {
+    margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+
+  .logo img {
+    margin-bottom: 10px; /* Add spacing below logo for smaller screens */
+  }
+}
+
+/* Media query for laptop screens */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 50px; /* Adjust padding for laptop screens */
+  }
+
+  .logo img {
+    height: 60px; /* Adjust logo size for laptop screens */
+  }
+
+  .nav-links li {
+    margin-right: 30px; /* Adjust spacing between nav items for laptop screens */
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .logo img {
+    height: 40px; /* Reduce logo size for smaller screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px; /* Adjust top position to avoid overlapping with logo */
+    right: 20px; /* Adjust right position */
+    background-color: #faf1b8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it appears on top of other content */
+  }
+
+  .nav-links.open {
+    display: flex; /* Display navigation links when navbar is clicked */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+}
+/* Inside MainPage.css */
+.subscription {
+  text-align: center;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.subscribe-btn {
+  background-color: #007bff; /* Green background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+@media only screen and (max-width: 600px) {
+  .subscription {
+    display: none;
+  }
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .menu-icon{
+ display: none;
+} */
+.Sponsor {
+  text-align: center;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.Sponsor-btn {
+  background-color: #4caf50; /* Green background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.Sponsor-btn:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+@media only screen and (max-width: 600px) {
+  .Sponsor {
+    display: none;
+  }
+}
